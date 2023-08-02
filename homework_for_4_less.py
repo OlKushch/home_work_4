@@ -26,12 +26,10 @@ def test_rectangle():
     # TODO сосчитайте периметр
     perimeter = (a + b) * 2
     assert perimeter == 60
-    print(perimeter)
 
     # TODO сосчитайте площадь
     area = a * b
     assert area == 200
-    print(area)
 
 
 def test_circle():
@@ -62,7 +60,6 @@ def test_random_list():
         l1 = random.randint(1, 101)
         l.append(l1)
         l.sort()
-    print(l)
     assert len(l) == 10
     assert l[0] < l[-1]
 
@@ -75,8 +72,6 @@ def test_unique_elements():
     l = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]
     # TODO удалите повторяющиеся элементы
     l = list(set(l))
-    print(type(l), len(l))
-
 
     assert isinstance(l, list)
     assert len(l) == 10
@@ -94,7 +89,7 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
-    print(d,type(d), len(d))
+    print(d.values())
 
     assert isinstance(d, dict)
     assert len(d) == 5
